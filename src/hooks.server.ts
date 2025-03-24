@@ -24,7 +24,7 @@ async function startWebSocketServer() {
 
     // 创建 Bun WebSocket 服务器
     bunServer = Bun.serve({
-      port: 8080,
+      port: 3001,
       fetch(req, server) {
         // 处理 WebSocket 升级请求
         const success = server.upgrade(req, {
