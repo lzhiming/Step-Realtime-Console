@@ -9,6 +9,6 @@ RUN bun run build
 EXPOSE 3000/tcp
 
 # WebSocket port
-EXPOSE 8080/tcp
+EXPOSE 3001/tcp
 
 ENTRYPOINT ["bun", "--bun", "build/"]
