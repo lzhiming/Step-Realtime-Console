@@ -311,7 +311,7 @@ async function startWebSocketServer() {
       }
     });
 
-    console.log('实时语音 WebSocket 中转服务器已启动，监听端口 8080');
+    console.log('实时语音 WebSocket 中转服务器已启动，监听端口 3000');
   } catch (error) {
     console.error('Error starting WebSocket server:', error);
     // 出错时清理可能部分创建的资源
