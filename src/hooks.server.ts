@@ -5,9 +5,7 @@ import { env, type Server } from 'bun';
 let bunServer: Server | null = null;
 
 // Don't run the WebSocket server during build
-if (!building) {
-  startWebSocketServer();
-}
+startWebSocketServer();
 
 async function startWebSocketServer() {
   // 如果已有服务器实例，先关闭它
