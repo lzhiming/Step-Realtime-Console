@@ -94,7 +94,7 @@
   async function initClient() {
     await tick();
     // WebSocket 中转服务 url
-    let wsProxyUrl = 'ws://localhost:3001';
+    let wsProxyUrl = 'ws://localhost:3000';
 
     // 构建查询参数
     const params = new URLSearchParams();
