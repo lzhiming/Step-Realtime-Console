@@ -603,6 +603,9 @@
             {#if conversationalMode === 'manual'}
               <div class="flex justify-center">
                 <button
+		  onmousedown={startRecording}
+                  onmouseup={stopRecording}
+                  onmouseleave={isRecording ? stopRecording : null}
                   ontouchstart={startRecording}
                   ontouchend={stopRecording}
                   ontouchmove={isRecording ? stopRecording : null}
