@@ -94,7 +94,7 @@
   async function initClient() {
     await tick();
     // WebSocket 中转服务 url
-    let wsProxyUrl = 'ws://step-realtime-console-production.up.railway.app:3000';
+    let wsProxyUrl = 'wss://step-realtime-console-production.up.railway.app:3000';
 
     // 构建查询参数
     const params = new URLSearchParams();
