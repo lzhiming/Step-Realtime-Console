@@ -521,7 +521,7 @@
 
   <div class="flex h-full min-h-0 gap-2">
     <!-- 主要内容区域 -->
-    <div class="bg-base-100 rounded-box flex flex-1 flex-col overflow-hidden border border-slate-300/20 shadow-md dark:border-slate-500/40">
+    <div class="bg-base-100 rounded-box flex flex-1 flex-col min-w-72 overflow-hidden border border-slate-300/20 shadow-md dark:border-slate-500/40">
       {#if !isConnected}
         <div class="flex h-full flex-col items-center justify-center text-center">
           <div class="mb-8 flex items-center justify-center gap-2">
@@ -603,9 +603,9 @@
             {#if conversationalMode === 'manual'}
               <div class="flex justify-center">
                 <button
-                  onmousedown={startRecording}
-                  onmouseup={stopRecording}
-                  onmouseleave={isRecording ? stopRecording : null}
+                  ontouchstart={startRecording}
+                  ontouchend={stopRecording}
+                  ontouchmove={isRecording ? stopRecording : null}
                   class="flex h-16 w-16 items-center justify-center rounded-full {isRecording ? 'bg-emerald-500' : 'bg-blue-500'} text-white shadow-lg transition-colors hover:opacity-90 focus:outline-none"
                 >
                   {#if isRecording}
@@ -627,7 +627,7 @@
     </div>
 
     <!-- 调试事件日志 -->
-    <div class="bg-base-100 rounded-box flex max-h-full min-h-0 w-1/3 min-w-72 flex-col overflow-hidden border border-slate-300/20 shadow-md dark:border-slate-500/40">
+    <div class="bg-base-100 rounded-box flex max-h-full min-h-0 w-1/3 min-w-36 flex-col overflow-hidden border border-slate-300/20 shadow-md dark:border-slate-500/40">
       <div class="flex h-12 items-center justify-between p-2">
         <h2 class="text-xl font-semibold">调试日志</h2>
         <div>
