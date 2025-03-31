@@ -450,7 +450,7 @@
 <div class="bg-base-100 flex h-screen flex-col p-4">
   <!-- 页面顶部 连接、断开连接 按钮 -->
   <div class="mb-4 flex items-center justify-between">
-    <h1 class="text-xl font-bold">实时对话体验</h1>
+    <h1 class="text-xl font-bold">对话体验</h1>
     <div class="flex items-center justify-end space-x-2">
       <!-- 显示连接错误信息 -->
       {#if connectionError}
@@ -482,7 +482,7 @@
           </select>
         </label> -->
 
-        <label class="select rounded-box mr-2 w-60">
+        <!-- <label class="select rounded-box mr-2 w-60">
           <span class="label">切换音色</span>
           <select bind:value={selectedVoice} onchange={changeVoice}>
             {#each voices as voice}
@@ -502,7 +502,7 @@
         <label class="input rounded-box mr-2 w-48">
           <span class="label">温度</span>
           <input type="number" step="0.1" max="1.0" min="0.0" bind:value={temperature} onchange={changeTemperature} placeholder="修改温度" />
-        </label>
+        </label> -->
 
         <button
           onclick={() => {
