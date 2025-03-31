@@ -449,6 +449,17 @@
   }
 </script>
 
+<style>
+  .btnStopDefault {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+</style>
+
 <div class="bg-base-100 flex h-screen flex-col p-4">
   <!-- 页面顶部 连接、断开连接 按钮 -->
   <div class="mb-4 flex items-center justify-between">
@@ -600,7 +611,7 @@
         </div>
 
         <!-- 按住说话 按钮 -->
-        <div class="border-base-300/50 border-t p-2">
+        <div class="btnStopDefault border-base-300/50 border-t p-2">
           {#if isConnected}
             {#if conversationalMode === 'manual'}
               <div class="flex justify-center">
