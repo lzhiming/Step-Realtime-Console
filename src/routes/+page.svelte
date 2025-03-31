@@ -23,7 +23,7 @@
 
   let wsUrl = $state('wss://api.stepfun.com/v1/realtime'); // WebSocket URL 状态变量
   let modelName = $state(availableModels[0]); // 选定的模型
-  let apiKey = $state(''); // API_KEY
+  let apiKey = $state('S9NzxGjlEbVxGFeIGutnRAVKLXe4zAaTxIFAXXSKlasml1KNtx0ZeA7pPg8OQnHz'); // API_KEY
 
   let items: Array<ItemType> = $state([]); // 对话
   let realtimeEvents: Array<RealtimeEvent> = $state([]); // 所有事件日志
@@ -450,7 +450,7 @@
 <div class="bg-base-100 flex h-screen flex-col p-4">
   <!-- 页面顶部 连接、断开连接 按钮 -->
   <div class="mb-4 flex items-center justify-between">
-    <h1 class="text-xl font-bold">Stepfun Realtime 实时对话体验</h1>
+    <h1 class="text-xl font-bold">实时对话体验</h1>
     <div class="flex items-center justify-end space-x-2">
       <!-- 显示连接错误信息 -->
       {#if connectionError}
@@ -630,7 +630,7 @@
     </div>
 
     <!-- 调试事件日志 -->
-    <div class="bg-base-100 rounded-box flex max-h-full min-h-0 w-1/3 min-w-36 flex-col overflow-hidden border border-slate-300/20 shadow-md dark:border-slate-500/40">
+    <div class="hidden bg-base-100 rounded-box flex max-h-full min-h-0 w-1/3 min-w-36 flex-col overflow-hidden border border-slate-300/20 shadow-md dark:border-slate-500/40">
       <div class="flex h-12 items-center justify-between p-2">
         <h2 class="text-xl font-semibold">调试日志</h2>
         <div>
