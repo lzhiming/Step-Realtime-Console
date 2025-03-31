@@ -630,7 +630,7 @@
     </div>
 
     <!-- 调试事件日志 -->
-    <div class="hidden bg-base-100 rounded-box flex max-h-full min-h-0 w-1/3 min-w-36 flex-col overflow-hidden border border-slate-300/20 shadow-md dark:border-slate-500/40">
+    <div class="hidden bg-base-100 rounded-box flex max-h-full min-h-0 min-w-36 flex-col overflow-hidden border border-slate-300/20 shadow-md dark:border-slate-500/40">
       <div class="flex h-12 items-center justify-between p-2">
         <h2 class="text-xl font-semibold">调试日志</h2>
         <div>
