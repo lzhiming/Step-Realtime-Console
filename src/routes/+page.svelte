@@ -286,7 +286,8 @@
   /**
    * 在手动按键通话模式下，开始录音
    */
-  async function startRecording() {
+  async function startRecording(event: Event) {
+    event.preventDefault()
     isRecording = true;
     const trackSampleOffset = wavStreamPlayer.interrupt();
     if (trackSampleOffset?.trackId) {
@@ -299,7 +300,8 @@
   /**
    * 在手动按键通话模式下，停止录音
    */
-  async function stopRecording() {
+  async function stopRecording(event: Event) {
+    event.preventDefault()
     isRecording = false;
     await wavRecorder.pause();
     client?.createResponse();
